@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --my-color-gris: #ffffffef;
+  --my-color-blue: #661c0f;
+  --my-color-jaune: #14100f;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 10px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  text-align: justify;
+}
+
+body {
+  overflow: hidden;
+}
+
+.textB {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: var(--my-color-blue);
+}
+
+.textB::after {
+  position: relative;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: var(--my-color-jaune);
+}
+h1 {
+  position: relative;
+  display: block;
+  font-size: 3em;
+  font-weight: 900;
+  color: var(--my-color-blue);
+}
+
+p {
+  margin: 5px;
+  margin-left: 3px;
+  display: block;
+  width: 90%;
+  font-size: 1.1em;
+  position: relative;
+  text-align: center;
+  text-align: justify;-+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

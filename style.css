@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --my-color-gris: #ffffffef;
+  --my-color-blue: #661c0f;
+  --my-color-jaune: #14100f;
+}
+
+/*  pour definir les marge et les polices utileses */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  overflow: hidden; /* pour cacher tout les contenus qui depassent */
+}
+
+/* width cest la largeur et height cest la hauteur*/
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--my-color-gris);
+}
+
+.entete {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+}
+
+/* font-size et weight c'est pour la taille du text et le gras du text*/
+
+.logo {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--my-color-blue);
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+b {
+  font-size: 70px;
+  color: var(--my-color-jaune);
+}
+.logo span {
+  color: var(--my-color-jaune);
+}
+
+.menu {
+  display: flex;
+}
+.menu li {
+  margin: 0 15px;
+}
+
+.menu li a {
+  font-size: 25px;
+  color: var(--my-color-blue);
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.corps {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.textB {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: var(--my-color-blue);
+}
+
+.textB::after {
+  position: relative;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: var(--my-color-jaune);
+}
+h1 {
+  position: relative;
+  display: block;
+  color: var(--my-color-blue);
+}
+
+p {
+  display: block;
+  width: 90%;
+  font-size: 25px;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+  width: 50%;
+  position: relative;
+  left: 50px;
+}
+
+/* jai juste aplliquer du style sur mon lien on lui donnant des pordures */
+
+.button {
+  font-size: 25px;
+  font-weight: 200;
+  background-color: var(--my-color-blue);
+  color: white;
+  padding: 4px 5px;
+  margin: 40px 5px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.corps::before {
+  position: absolute;
+  content: "";
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #661c0f, #ffffffea);
+  left: -17%;
+  top: 40%;
+}
+
+.corps::after {
+  position: absolute;
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #661c0f, #ffffffea);
+  left: 35%;
+  top: 10%;
+}

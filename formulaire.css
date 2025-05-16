@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(pexels-pixabay-276452.jpg);
+  background: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  text-align: justify;
+}
+
+input {
+  margin-bottom: 5px;
+  padding: 5px;
+  outline: 0;
+  border: 1px solid black;
+}
+
+input:focus {
+  border: 1px #661c0f;
+}
