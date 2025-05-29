@@ -1,0 +1,90 @@
+:root {
+  --my-color-gris: #ffffffef;
+  --my-color-blue: #661c0f;
+  --my-color-jaune: #14100f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: var(--my-color-blue);
+  color: var(--my-color-gris);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  text-align: left;
+  text-decoration: none;
+  font-size: 40px;
+  color: white;
+}
+
+.logo b {
+  font-size: 55px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logo span {
+  font-size: 55px;
+  color: var(--my-color-gris);
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0 30px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-right: 80px;
+}
+.nav-links a:hover {
+  background-color: var(--my-color-jaune);
+  color: white;
+  text-decoration: #14100f;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.text {
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.textB {
+  font-weight: bold;
+  font-size: 3em;
+  color: #661c0f;
+}
+
+.text ul li {
+  background-color: var(--my-color-blue);
+  color: var(--my-color-gris);
+  padding: 20px;
+  border-radius: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.back {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.back a {
+  background-color: #661c0f;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  padding: 10px;
+  border: #661c0f;
+  border-radius: 5px;
+}

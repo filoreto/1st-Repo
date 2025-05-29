@@ -30,8 +30,35 @@ input {
   padding: 5px;
   outline: 0;
   border: 1px solid black;
+  border-radius: 5px;
 }
 
 input:focus {
   border: 1px #661c0f;
+}
+
+.back {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.back a {
+  background-color: rgb(149, 3, 3);
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.send {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.send a {
+  background-color: rgb(149, 3, 3);
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
 }

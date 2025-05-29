@@ -27,46 +27,51 @@ body {
   min-height: 100vh;
   background-color: var(--my-color-gris);
 }
-
-.entete {
+.nav-bar {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
-  height: 80px;
-  line-height: 80px;
+  justify-content: space-between;
+  padding: 20px 25px;
+  align-items: center;
+  background-color: var(--my-color-blue);
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0 30px;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-right: 80px;
+}
+.nav-links a:hover {
+  background-color: var(--my-color-jaune);
+  color: white;
+  text-decoration: #14100f;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* font-size et weight c'est pour la taille du text et le gras du text*/
-
-.logo {
-  display: flex;
+.logo a {
+  text-align: left;
+  text-decoration: none;
   font-size: 40px;
-  font-weight: 800;
-  color: var(--my-color-blue);
-  letter-spacing: 2px;
-  cursor: pointer;
-  text-transform: uppercase;
+  color: white;
 }
-b {
-  font-size: 70px;
-  color: var(--my-color-jaune);
+
+.logo b {
+  font-size: 55px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .logo span {
-  color: var(--my-color-jaune);
+  font-size: 55px;
+  color: var(--my-color-gris);
 }
 
-.menu {
-  display: flex;
-}
-.menu li {
-  margin: 0 15px;
-}
-
-.menu li a {
-  font-size: 25px;
-  color: var(--my-color-blue);
-  letter-spacing: 3px;
-  text-transform: capitalize;
+img {
+  display: none;
 }
 
 .corps {
@@ -79,25 +84,25 @@ b {
   overflow: hidden;
 }
 
-.textB {
+.textA {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display: block;
+  display: flex;
   position: relative;
   font-size: 35px;
   letter-spacing: 3px;
-  color: var(--my-color-blue);
+  color: black;
+  padding: 10px 10px;
 }
 
-.textB::after {
-  position: relative;
-  content: "";
-  height: 4px;
-  width: 45px;
-  bottom: 10px;
-  background-color: var(--my-color-jaune);
-}
+/* span.textA{
+  padding: 100 0px;
+  border: #14100f;
+  font-size: 40px;
+  color: var(--my-color-jaune);
+} */
 h1 {
   position: relative;
+  font-size: 50px;
   display: block;
   color: var(--my-color-blue);
 }
@@ -111,11 +116,22 @@ p {
 }
 
 .btn {
-  width: 50%;
+  display: flex;
+  padding: 40px;
   position: relative;
   left: 50px;
 }
 
+.btn a {
+  text-decoration: none;
+  align-items: center;
+  color: var(--my-color-gris);
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--my-color-blue);
+}
 /* jai juste aplliquer du style sur mon lien on lui donnant des pordures */
 
 .button {
@@ -123,31 +139,17 @@ p {
   font-weight: 200;
   background-color: var(--my-color-blue);
   color: white;
-  padding: 4px 5px;
+  padding: 10px 25px;
   margin: 40px 5px;
   text-transform: capitalize;
   text-decoration: none;
   border-radius: 10px;
 }
-
-.corps::before {
-  position: absolute;
-  content: "";
-  height: 600px;
-  width: 600px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #661c0f, #ffffffea);
-  left: -17%;
-  top: 40%;
+.button:hover {
+  background-color: var(--my-color-jaune);
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
-.corps::after {
-  position: absolute;
-  content: "";
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #661c0f, #ffffffea);
-  left: 35%;
-  top: 10%;
+media screen and (max-width: 768px) {
 }
