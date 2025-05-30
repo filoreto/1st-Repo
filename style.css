@@ -42,7 +42,8 @@ body {
   padding: 0 30px;
   font-size: 30px;
   border-radius: 5px;
-  margin-right: 80px;
+  margin-right: 50px;
+  justify-content: s;
 }
 .nav-links a:hover {
   background-color: var(--my-color-jaune);
@@ -71,11 +72,14 @@ body {
 }
 
 img {
+  position: absolute;
   display: none;
+  top: 35px;
+  right: 50px;
+  width: 55px;
 }
 
 .corps {
-  display: flex;
   width: 100%;
   height: 100vh;
   justify-content: center;
@@ -84,41 +88,36 @@ img {
   overflow: hidden;
 }
 
+.text {
+}
+
 .textA {
+  margin-top: 100px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  position: relative;
   font-size: 35px;
   letter-spacing: 3px;
   color: black;
   padding: 10px 10px;
 }
 
-/* span.textA{
-  padding: 100 0px;
-  border: #14100f;
-  font-size: 40px;
-  color: var(--my-color-jaune);
-} */
 h1 {
-  position: relative;
   font-size: 50px;
   display: block;
   color: var(--my-color-blue);
 }
 
 p {
-  display: block;
+  display: flex;
   width: 90%;
   font-size: 25px;
-  position: relative;
+
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn {
   display: flex;
   padding: 40px;
-  position: relative;
   left: 50px;
 }
 
@@ -150,6 +149,65 @@ p {
   color: white;
   transition: all 0.3s ease-in-out;
 }
+.nav-barB {
+  display: none;
+}
 
-media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
+  .corps {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+    border: #14100f;
+  }
+
+  .nav-bar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    align-items: center;
+    background-color: var(--my-color-blue);
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.234);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links a {
+    color: #14100f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar .nav-links a {
+    margin: 25px 0px;
+    font-size: 35px;
+  }
+
+  img {
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 50px;
+    width: 55px;
+  }
+
+  .mobile-menu {
+    margin-left: 0;
+  }
 }

@@ -53,6 +53,13 @@ body {
   padding: 10px;
   transition: all 0.3s ease-in-out;
 }
+img {
+  position: absolute;
+  display: none;
+  top: 35px;
+  right: 30%;
+  width: 55px;
+}
 
 .text {
   padding: 20px;
@@ -87,4 +94,63 @@ body {
   padding: 10px;
   border: #661c0f;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .corps {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+    border: #14100f;
+  }
+
+  .nav-bar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    align-items: center;
+    background-color: var(--my-color-blue);
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.234);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links a {
+    color: #14100f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar .nav-links a {
+    margin: 25px 0px;
+    font-size: 35px;
+  }
+
+  img {
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 50px;
+    width: 55px;
+  }
+
+  .mobile-menu {
+    margin-left: 0;
+  }
 }
